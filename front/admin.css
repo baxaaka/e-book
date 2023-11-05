@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #101010;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  background-color: #101010;
+}
+
+.sideBox {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  gap: 30px;
+  color: #f2f6fc;
+
+  /* background-color: aqua; */
+}
+
+.sideBookBtn {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s ease all;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f2f6fc;
+}
+
+.sideBookBtn:hover {
+  padding-left: 25px;
+  background-color:#29bf12 ;
+}
+
+.sideAuthorBtn {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f2f6fc;
+  transition: 0.5s ease all;
+
+  /* background-color: #1e1e1e; */
+}
+
+.sideAuthorBtn:hover {
+  background-color:#29bf12 ;
+
+  padding-left: 25px;
+}
+
+.sideBookAuthorBtn {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s ease all;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f2f6fc;
+}
+
+.sideBookAuthorBtn:hover {
+  background-color:#29bf12 ;
+
+  padding-left: 25px;
+}
+
+.sideLogoutBtn {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s ease all;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f2f6fc;
+}
+
+.sideLogoutBtn:hover {
+  background-color:#f21b3f ;
+
+  padding-left: 25px;
+}
+
+.section {
+  width: 80%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  /* background-color: rgb(141, 138, 144); */
+}
+
+.bookBox {
+  width: 100%;
+  height: 280vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  background-color: #1e1e1e;
+}
+
+
+.authorBox {
+  width: 100%;
+  height: 280vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  background-color: #1e1e1e;
+}
+
+.bookGet {
+  width: 100%;
+  height: 500px;
+  color: #101010;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: scroll;
+  /* background-color: #101010; */
+}
+.bookGet h3{
+  color: #ffffff;
+}
+
+.authorGet {
+  width: 100%;
+  height: 500px;
+  color: #101010;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: scroll;
+  /* background-color: #101010; */
+}
+.authorGet h3{
+  color: #ffffff;
+}
+
+.getBox {
+  display: flex;
+  gap: 30px;
+  /* height: 50px; */
+  background-color: #e5e5e5;
+  padding-left: 20px;
+}
+
+.getBox img {
+  position: relative;
+  left: 240px;
+}
+
+.bookPost {
+  width: 100%;
+  height: 700px;
+  color: #f2f6fc;
+
+}
+
+.authorPost {
+  width: 100%;
+  height: 700px;
+  color: #f2f6fc;
+
+}
+
+#postFormBook {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+
+}
+
+#postFormAuthor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+
+}
+
+#title {
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+  background-color: #101010;
+  color: #ffffff;
+  border: 1px solid #807f7fb8;
+  outline: none;
+  border-radius: 5px;
+
+}
+
+#cat_ref_id {
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+  background-color: #101010;
+  color: #ffffff;
+  border: 1px solid #807f7fb8;
+  outline: none;
+  border-radius: 5px;
+}
+#year {
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+  background-color: #101010;
+  color: #ffffff;
+  border: 1px solid #807f7fb8;
+  outline: none;
+  border-radius: 5px;
+}
+#page {
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+  background-color: #101010;
+  color: #ffffff;
+  border: 1px solid #807f7fb8;
+  outline: none;
+  border-radius: 5px;
+}
+
+#about_book {
+  width: 500px;
+  height: 200px;
+  resize: none;
+  padding-left: 20px;
+  background-color: #101010;
+  color: #ffffff;
+  border: 1px solid #807f7fb8;
+  outline: none;
+  border-radius: 5px;
+}
+
+#book_img {
+  width: 300px;
+  height: 30px;
+
+}
+
+#book_file {
+  width: 300px;
+  height: 30px;
+}
+
+
+#username {
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+
+}
+
+#age {
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+
+}
+#about_author {
+  width: 500px;
+  height: 200px;
+  resize: none;
+  padding-left: 20px;
+
+}
+
+#author_img {
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+
+}
+
+h1{
+  color: #29bf12;
+  text-align: center;
+}
+
+#page {
+  width: 300px;
+  height: 30px;
+  padding-left: 20px;
+
+}
+
+
+
+
+#postBtn {
+  width: 200px;
+  height: 30px;
+  position: relative;
+  left: 800px;
+}
+.bookPut {
+   width: 100%;
+  height: 700px;
+  color: #f2f6fc;
+}
+
+.bookPut {
+  width: 100%;
+ height: 700px;
+ color: #f2f6fc;
+}
+
+#putFormBook {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+
+}
+
+#putFormAuthor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+
+}
+
+#putBtn{
+  width: 200px;
+  height: 30px;
+  position: relative;
+  left: 800px;
+}
+
+.bookDelete {
+  width: 100%;
+  height: 200px;
+  color: #f2f6fc;
+
+}
+
+.authorDelete {
+  width: 100%;
+  height: 200px;
+  color: #f2f6fc;
+
+}
+
+
+
+#deleteBookBtn{
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  left: 800px;
+}

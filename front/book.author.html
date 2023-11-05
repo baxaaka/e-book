@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin panel</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="sideBox">
+          <a href="/admin.html" class="sideBookBtn"> Bosh sahifa </a>
+          <a href="/book.crm.html" class="sideBookBtn"> Kitoblar </a>
+          <a href="" class="sideAuthorBtn"> Mualliflar </a>
+          <a  href="/book.author.html" class="sideBookAuthorBtn">Kitoblar va Mualliflar </a >
+
+          <div class="sideLogoutBtn">Log out</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="authorBox">
+        <h1>Kitoblar va Mualliflar</h1>
+
+            <div class="authorPost">
+              <br />
+              <span>Muallif va Kitobni ulash</span>
+              <br />
+              <br />
+              <form id="postFormAuthor">
+                <input type="text" name="book_ref_id" placeholder="book_ref_id" id="book_ref_id" />
+                <input
+                  type="text"
+                  name="author_ref_id"
+                  placeholder="author_ref_id"
+                  id="author_ref_id"
+                />
+              
+
+                <button id="postBtn">Yuklash</button>
+              </form>
+            </div>
+            <div class="authorGet">
+              <br />
+              <h3>Get Author</h3>
+            </div>
+            <div class="bookPut">
+              <br />
+              <span>Muallif va Kitobni  yangilash</span>
+              <br />
+              <br />
+              <span class="book_id"></span>
+              <form id="putFormAuthor">
+                <input type="text" name="book_ref_id" placeholder="book_ref_id" id="book_ref_id" />
+                <input
+                  type="text"
+                  name="author_ref_id"
+                  placeholder="author_ref_id"
+                  id="author_ref_id"
+                />
+               
+                <button id="putBtn">Yangilash</button>
+              </form>
+            </div>
+            <div class="authorDelete">
+              <br>
+  
+              <span>Muallif va Kitobni ochirish</span>
+              <br>
+              <br>
+              <span class="book_id2"></span>
+              <button id="deleteBookBtn">Ochirish</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+  <script src="./book.author.js"></script>
+</html>

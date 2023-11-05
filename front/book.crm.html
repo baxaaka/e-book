@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin panel</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="sideBox">
+          <a href="/admin.html" class="sideBookBtn"> Bosh sahifa </a>
+
+          <a href="/book.crm.html" class="sideBookBtn"> Kitoblar </a>
+          <a href="/author.crm.html" class="sideAuthorBtn"> Mualliflar </a>
+          <a href="" class="sideBookAuthorBtn">Kitoblar va Mualliflar </a>
+
+          <span class="sideLogoutBtn"> Log out </span>
+        </div>
+      </div>
+      <div class="section">
+
+        <div class="bookBox">
+          
+        <h1>Kitoblar</h1>
+
+          <div class="bookPost">
+            <br />
+            <span>Kitobni yuklash</span>
+            <br />
+            <br />
+            <form id="postFormBook">
+              <input type="text" name="title" placeholder="title" id="title" />
+              <input
+                type="text"
+                name="cat_ref_id"
+                placeholder="cat_ref_id"
+                id="cat_ref_id"
+              />
+              <input type="text" name="year" placeholder="year" id="year" />
+              <input type="text" name="page" placeholder="page" id="page" />
+              <textarea
+                name="about_book"
+                cols="30"
+                placeholder="about_book"
+                id="about_book"
+                rows="10"
+              ></textarea>
+              <input
+                type="file"
+                name="book_img"
+                placeholder="book_img"
+                id="book_img"
+              />
+              <input
+                type="file"
+                name="book_file"
+                placeholder="book_file"
+                id="book_file"
+              />
+              <button id="postBtn">Yuklash</button>
+            </form>
+          </div>
+          <div class="bookGet">
+            <br />
+            <h3>Get Book</h3>
+          </div>
+          <div class="bookPut">
+            <br />
+            <span>Kitobni yangilash</span>
+            <br />
+            <br />
+            <span class="book_id"></span>
+            <form id="putFormBook">
+              <input type="text" name="title" placeholder="title" id="title" />
+              <input
+                type="text"
+                name="cat_ref_id"
+                placeholder="cat_ref_id"
+                id="cat_ref_id"
+              />
+              <input type="text" name="year" placeholder="year" id="year" />
+              <input type="text" name="page" placeholder="page" id="page" />
+              <textarea
+                name="about_book"
+                cols="30"
+                placeholder="about_book"
+                id="about_book"
+                rows="10"
+              ></textarea>
+              <input
+                type="file"
+                name="book_img"
+                placeholder="book_img"
+                id="book_img"
+              />
+              <input
+                type="file"
+                name="book_file"
+                placeholder="book_file"
+                id="book_file"
+              />
+              <button id="putBtn">Yangilash</button>
+            </form>
+          </div>
+          <div class="bookDelete">
+            <br>
+
+            <span>Kitobni ochirish</span>
+            <br>
+            <br>
+            <span class="book_id2"></span>
+            <button id="deleteBookBtn">Ochirish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./book.crm.js"></script>
+</html>

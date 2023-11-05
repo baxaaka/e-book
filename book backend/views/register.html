@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins";
+    }
+    body {
+      background-color: black;
+    }
+    .section {
+      width: 400px;
+      height: 300px;
+      /* background-color: aliceblue; */
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: 200px;
+    }
+    .box {
+      width: 400px;
+      height: 200px;
+      /* background-color: aqua; */
+    }
+    input {
+      width: 400px;
+      height: 40px;
+      position: relative;
+      top: 50px;
+      margin-top: 20px;
+      border: 1px solid #fcfcfc;
+      outline-color: #ff0000;
+      color: #fcfcfc;
+      background-color: black;
+      text-align: center;
+      border-radius: 5px;
+      font-family: "Poppins";
+    }
+
+    button {
+      width: 400px;
+      height: 40px;
+      position: relative;
+      right: 0;
+      top: 70px;
+      border: none;
+      outline: none;
+      background-color: #ff0000;
+      color: #ffffff;
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #ff0000;
+      text-align: center;
+      /* text-decoration: solid  wheat 1px;  */
+      text-shadow: #ff0000 2px 5px 20px;
+    }
+    a {
+      position: absolute;
+      bottom: -130px;
+      right: 0;
+      color: #fcfcfc;
+    }
+
+    /* file uplaod */
+    .custum-file-upload {
+      height: 30px;
+      width: 60px;
+      cursor: pointer;
+
+    }
+
+    .custum-file-upload .icon {
+      height: 60px;
+      width: 80px;
+      position: relative;
+      top: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .custum-file-upload .icon img {
+      height: 80px;
+    }
+
+    .custum-file-upload input {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="section">
+      <h1>REGISTER</h1>
+      <div class="box">
+        <label class="custum-file-upload" for="file">
+          <div class="icon">
+            <img src="./img/user.png" alt="" />
+          </div>
+
+          <input type="file" id="file" />
+        </label>
+
+        <form action="/users" method="post">
+          <input
+            type="text"
+            name="username"
+            id="users"
+            placeholder="username"
+          />
+          <input type="text" name="gmail" id="gmail" placeholder="gmail" />
+          <input type="password" name="password" id="password" placeholder="password" />
+
+          <button id="btn">Sign In</button>
+          <a href="/login">login</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
